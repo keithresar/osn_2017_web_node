@@ -1,12 +1,14 @@
 
-// Load the node-router library by creationix
-var server = require('node-router').getServer();
+const express = require('express')
+const app = express()
 
-// Configure our HTTP server to respond with Hello World the root request
-server.get("/", function (request, response) {
-  response.simpleText(200, "Hello World!");
-});
+app.get('/', function (req, res) {
+  status = { 'web': 'ok' };
 
-// Listen on port 8080 on localhost
-server.listen(8080, "localhost");
+  res.send(JSON.stringify(status, null, 3));
+})
+
+app.listen(8080, function () {
+  console.log('Listening on port 8080!');
+})
 
