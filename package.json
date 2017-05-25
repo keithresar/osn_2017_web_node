@@ -1,0 +1,22 @@
+{
+  "name": "osn_2017_web_node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "simple_router.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keithresar/osn_2017_web_node.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keithresar/osn_2017_web_node/issues"
+  },
+  "homepage": "https://github.com/keithresar/osn_2017_web_node#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
