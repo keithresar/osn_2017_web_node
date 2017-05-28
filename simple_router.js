@@ -3,7 +3,7 @@ const express = require('express')
 const app = express()
 
 app.get('/', function (req, res) {
-  status = { 'web': 'ok' };
+  status = { 'web': 'ok', 'web_hostname': process.env.HOSTNAME };
 
   res.send(JSON.stringify(status, null, 3));
 })
