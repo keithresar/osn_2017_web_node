@@ -7,7 +7,7 @@ hit_count = 0;
 
 app.get('/', function (req, res) {
     hit_count += 1;
-    status = { 'web': { 'status': 'ok', 'hit_count': hit_count, 'version': 2, 'hostname': process.env.HOSTNAME } };
+    status = { 'web': { 'status': 'ok', 'hit_count': hit_count, 'version': 3, 'hostname': process.env.HOSTNAME } };
 
     // Make API call if routing defined in env
     if (process.env.API_SERVICE_PORT)  {
